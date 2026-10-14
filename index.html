@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kerala PSC StudySpace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="navbar">
+    <div class="brand">
+      <span class="brand-badge">PSC</span>
+      <h1>Mission Kerala PSC</h1>
+    </div>
+    <div class="streak-pill">🔥 Daily Practice</div>
+  </header>
+
+  <main class="container">
+    <!-- Student Summary Cards -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-label">Best Score</span>
+        <h2 id="bestScore">0%</h2>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Tests Completed</span>
+        <h2 id="totalAttempts">0</h2>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Medals</span>
+        <h2 id="medalsCount">0 🏅</h2>
+      </div>
+    </section>
+
+    <!-- Category / Unit Selection -->
+    <section class="topics-section">
+      <h2>Syllabus Practice Modules</h2>
+      <div id="topicsContainer" class="topics-grid">
+        <!-- Topic cards load dynamically via script.js -->
+      </div>
+    </section>
+
+    <!-- Quiz Modal Screen (Hidden by default) -->
+    <div id="quizModal" class="modal hidden">
+      <div class="quiz-box">
+        <div class="quiz-header">
+          <span id="quizTopicTitle">Topic</span>
+          <div class="timer">⏱ <span id="timeLeft">30</span>s</div>
+        </div>
+
+        <div class="quiz-body">
+          <h3 id="questionText">Question goes here...</h3>
+          <div id="optionsList" class="options-container"></div>
+          <div id="feedbackBox" class="feedback hidden"></div>
+        </div>
+
+        <div class="quiz-footer">
+          <span id="questionCounter">Q 1/10</span>
+          <button id="nextBtn" class="btn hidden">Next Question →</button>
+          <button id="closeQuizBtn" class="btn btn-secondary">Exit</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

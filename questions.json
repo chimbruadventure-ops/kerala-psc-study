@@ -1,0 +1,19 @@
+[
+  {
+    "category": "Kerala History",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Who founded the Sadhujana Paripalana Sangham in 1907?",
+        "options": [
+          "Sree Narayana Guru",
+          "Ayyankali",
+          "Chattampi Swamikal",
+          "V. T. Bhattathiripad"
+        ],
+        "answer": 1,
+        "explanation": "Mahatma Ayyankali founded it in 1907."
+      }
+    ]
+  }
+]
